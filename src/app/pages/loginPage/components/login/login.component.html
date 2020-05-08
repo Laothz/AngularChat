@@ -1,0 +1,21 @@
+<form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+
+  <div class="div-input-body">
+    <fa-icon [icon]="faEnvelope"></fa-icon>
+    <input type="email" placeholder="Email" formControlName="emailInput">
+  </div>
+
+  <div class="div-input-body">
+    <fa-icon [icon]="faLock"></fa-icon>
+    <input type="password" placeholder="Password" formControlName="passInput">
+  </div>
+
+  <div class="div-button-body">
+    <button type="submit">LOGIN</button>
+  </div>
+
+  <div class="div-register-link">
+    <a href="">Register</a>
+  </div>
+  
+</form>
